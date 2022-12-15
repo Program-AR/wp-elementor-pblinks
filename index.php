@@ -29,5 +29,9 @@ add_action( 'elementor/dynamic_tags/register_tags', function( $dynamic_tags ) {
     include_once( __DIR__ . '/pilasbloques-links/pilasbloques-links.php' );
 
     $dynamic_tags->register_tag('PilasBloquesLinkDeb');
+    $dynamic_tags->register_tag('PilasBloquesLinkLinuxPortable');
+    $dynamic_tags->register_tag('PilasBloquesLinkWindows');
+    $dynamic_tags->register_tag('PilasBloquesLinkMac');
+    $dynamic_tags->register_tag('PilasBloquesVersion');
 } );
 
