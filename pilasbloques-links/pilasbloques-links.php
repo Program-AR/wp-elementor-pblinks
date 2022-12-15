@@ -2,8 +2,10 @@
 global $pilasBloquesVersion;
 
 // Abstract
-Class PilasBloquesLink extends \Elementor\Core\DynamicTags\Tag {
-	private string $baseURL = 'https://github.com/Program-AR/pilas-bloques/releases/download/';
+abstract class PilasBloquesLink extends \Elementor\Core\DynamicTags\Tag {
+	public function baseURL(){
+		return 'https://github.com/Program-AR/pilas-bloques/releases/download/';
+	}
     public function get_group() {
 		return 'pilasbloques-links';
 	}
@@ -21,7 +23,7 @@ Class PilasBloquesLinkDeb extends PilasBloquesLink {
 	}
 	public function render() {
 		global $pilasBloquesVersion;
-		echo $this->baseURL . $pilasBloquesVersion . '/pilasbloques_' . $pilasBloquesVersion . '_amd64.deb';
+		echo $this->baseURL() . $pilasBloquesVersion . '/pilasbloques_' . $pilasBloquesVersion . '_amd64.deb';
 	}
 }
 
@@ -34,7 +36,7 @@ Class PilasBloquesLinkLinuxPortable extends PilasBloquesLink {
 	}
 	public function render() {
 		global $pilasBloquesVersion;
-		echo $this->baseURL . $pilasBloquesVersion . '/pilasbloques-' . $pilasBloquesVersion . 'a-linux-x64.zip';
+		echo $this->baseURL() . $pilasBloquesVersion . '/pilasbloques-' . $pilasBloquesVersion . 'a-linux-x64.zip';
 	}
 }
 
@@ -47,7 +49,7 @@ Class PilasBloquesLinkWindows extends PilasBloquesLink {
 	}
 	public function render() {
 		global $pilasBloquesVersion;
-		echo $this->baseURL . $pilasBloquesVersion . '/pilasbloques-' . $pilasBloquesVersion . 'a.exe';
+		echo $this->baseURL() . $pilasBloquesVersion . '/pilasbloques-' . $pilasBloquesVersion . 'a.exe';
 	}
 }
 
@@ -60,7 +62,7 @@ Class PilasBloquesLinkMac extends PilasBloquesLink {
 	}
 	public function render() {
 		global $pilasBloquesVersion;
-		echo $this->baseURL . $pilasBloquesVersion . '/pilasbloques-' . $pilasBloquesVersion . 'a.dmg';
+		echo $this->baseURL() . $pilasBloquesVersion . '/pilasbloques-' . $pilasBloquesVersion . 'a.dmg';
 	}
 }
 
