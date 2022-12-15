@@ -84,7 +84,7 @@ Class PilasBloquesVersion extends \Elementor\Core\DynamicTags\Tag {
 	}
 	public function render() {
 		global $pilasBloquesVersion;
-		echo $pilasBloquesVersion;
+		echo 'Versión ' . $pilasBloquesVersion;
 	}
 }
 // ---------------------------------------------------
