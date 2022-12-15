@@ -26,7 +26,7 @@ add_action( 'elementor/dynamic_tags/register_tags', function( $dynamic_tags ) {
         'title' => 'Pilas Bloques Links'
     ] );
 
-    include_once( __DIR__ . '/dynamicTags/pilasbloquesLinks.php' );
+    include_once( __DIR__ . '/pilasbloques-links/pilasbloques-links.php' );
 
     $dynamic_tags->register_tag('PilasBloquesLinkDeb');
 } );
