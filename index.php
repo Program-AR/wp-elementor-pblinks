@@ -31,4 +31,3 @@ add_action( 'elementor/dynamic_tags/register_tags', function( $dynamic_tags ) {
     $dynamic_tags->register_tag('PilasBloquesLinkDeb');
 } );
 
-$pilasBloquesVersion = "1.12.3";

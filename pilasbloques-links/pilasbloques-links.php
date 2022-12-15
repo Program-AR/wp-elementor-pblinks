@@ -1,4 +1,5 @@
 <?php
+global $pilasBloquesVersion;
 
 Class PilasBloquesLinkDeb extends \Elementor\Core\DynamicTags\Tag {
 	public function get_name() {
@@ -11,9 +12,13 @@ Class PilasBloquesLinkDeb extends \Elementor\Core\DynamicTags\Tag {
 		return 'pilasbloques-links';
 	}
     public function get_categories() {
-		return [ Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY ];
+		return [ Elementor\Modules\DynamicTags\Module::URL_CATEGORY ];
 	}
-    public function render() {
+	public function render() {
+		global $pilasBloquesVersion;
 		echo 'https://github.com/Program-AR/pilas-bloques/releases/download/' . $pilasBloquesVersion . '/pilasbloques_' . $pilasBloquesVersion . '_amd64.deb';
 	}
 }
+
+$pilasBloquesVersion = '1.12.3';
+
