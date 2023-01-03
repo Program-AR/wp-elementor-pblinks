@@ -89,5 +89,5 @@ Class PilasBloquesVersion extends \Elementor\Core\DynamicTags\Tag {
 }
 // ---------------------------------------------------
 
-$pilasBloquesVersion = '1.12.3';
+$pilasBloquesVersion = '1.13.2';
 
