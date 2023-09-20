@@ -36,7 +36,7 @@ Class PilasBloquesLinkLinuxPortable extends PilasBloquesLink {
 	}
 	public function render() {
 		global $pilasBloquesVersion;
-		echo $this->baseURL() . $pilasBloquesVersion . '/pilasbloques-' . $pilasBloquesVersion . 'a-linux-x64.zip';
+		echo $this->baseURL() . $pilasBloquesVersion . '/pilasbloques-' . $pilasBloquesVersion . '-linux-x64.zip';
 	}
 }
 
@@ -49,7 +49,7 @@ Class PilasBloquesLinkWindows extends PilasBloquesLink {
 	}
 	public function render() {
 		global $pilasBloquesVersion;
-		echo $this->baseURL() . $pilasBloquesVersion . '/pilasbloques-' . $pilasBloquesVersion . 'a.exe';
+		echo $this->baseURL() . $pilasBloquesVersion . '/pilasbloques-' . $pilasBloquesVersion . '.exe';
 	}
 }
 
@@ -62,7 +62,7 @@ Class PilasBloquesLinkMac extends PilasBloquesLink {
 	}
 	public function render() {
 		global $pilasBloquesVersion;
-		echo $this->baseURL() . $pilasBloquesVersion . '/pilasbloques-' . $pilasBloquesVersion . 'a.dmg';
+		echo $this->baseURL() . $pilasBloquesVersion . '/pilasbloques-' . $pilasBloquesVersion . '.dmg';
 	}
 }
 
