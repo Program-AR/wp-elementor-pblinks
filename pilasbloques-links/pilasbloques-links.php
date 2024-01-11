@@ -4,7 +4,7 @@ global $pilasBloquesVersion;
 // Abstract
 abstract class PilasBloquesLink extends \Elementor\Core\DynamicTags\Tag {
 	public function baseURL(){
-		return 'https://github.com/Program-AR/pilas-bloques-react/releases/download/';
+		return 'https://github.com/Program-AR/pilas-bloques-app/releases/download/';
 	}
     public function get_group() {
 		return 'pilasbloques-links';
@@ -88,5 +88,5 @@ Class PilasBloquesVersion extends \Elementor\Core\DynamicTags\Tag {
 }
 // ---------------------------------------------------
 
-$pilasBloquesVersion = '2.3.3';
+$pilasBloquesVersion = '2.4.0';
 
